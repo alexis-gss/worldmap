@@ -1,0 +1,653 @@
+/*PARAMETRES*/
+:root{
+    --color1: #FFFFFF;
+    --color2: #E5E5E5;
+    --color3: #0089C8;
+    --color4: rgba(86, 86, 86, .4);
+    --color5: #3E3E3E;
+}
+::-webkit-scrollbar{
+	background: var(--color2);
+	width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--color3);
+    border-radius: 10px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--color5);
+}
+h3{
+    margin: 0;
+}
+/*PAGE DE CHARGEMENT*/
+.loader {
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0f1823;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.loader img {
+    width: 100px;
+    border-radius: 10px;
+}
+.loader h2 {
+    margin: 1rem 0;
+    color: white;
+}
+.loader div{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    border: solid 2px white;
+    border-style: dashed;
+    background: none;
+    animation: loaderAnimation 10s linear infinite;
+}
+@keyframes loaderAnimation{
+    0{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+#map{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+.leaflet-left, .leaflet-top{
+    left: auto;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+}
+.leaflet-control{
+    margin: 2vh 2vh 0 0;
+    left: auto;
+    right: 45px;
+    top: 52px;
+}
+.leaflet-top .leaflet-control{
+    margin-top: 2vh;
+}
+.leaflet-control-zoom{
+    right: 0;
+}
+.leaflet-bar a{
+    border-bottom: 1px solid var(--color2);
+}
+.leaflet-bar a, .leaflet-bar a:hover{
+    color: var(--color3);
+    width: 34px;
+    height: 34px;
+    padding: 5px;
+}
+.leaflet-touch .leaflet-bar a{ 
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;   
+    box-shadow: 6px 6px 2px 1px var(--color4);  
+}
+.leaflet-touch .leaflet-bar{
+    border: none;
+    border-radius: 10px;
+}
+.leaflet-bar{
+    box-shadow: none;
+}
+.leaflet-control-zoom .leaflet-bar .leaflet-control{
+    border: none;
+}
+.leaflet-bar a:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 6px 6px 2px 1px var(--color4);
+}
+.leaflet-bar a:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: none;
+    box-shadow: 6px 6px 2px 1px var(--color4);
+}
+span{
+    color: var(--color3);
+}
+.leaflet-control-layers-toggle{
+    background-image: url("../data/layers.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    padding: 5px;
+    float: right;
+}
+.leaflet-control-layers-expanded{
+    width: 5rem;
+}
+.leaflet-touch .leaflet-control-layers-toggle{
+    width: 34px;
+    height: 34px;
+}
+.leaflet-control-layers-toggle{
+    width: 34px;
+    height: 34px;
+}
+.leaflet-bottom{
+    height: 235px;
+    width: 26.5rem;
+}
+.leaflet-control-layers-selector, .leaflet-control-layers-base label div span{
+    cursor: pointer;
+}
+.leaflet-right .leaflet-control{
+    position: absolute;
+    top: 205px;
+    box-shadow: 6px 6px 2px 1px var(--color4);
+    border-radius: 10px;
+    border: none;
+    right: 0;
+}
+.leaflet-right .leaflet-control{
+    margin-right: 2vh;
+}
+.leaflet-popup{
+    margin: 0;
+}
+.leaflet-popup .leaflet-zoom-animated{
+    bottom: -30px;
+}
+.leaflet-control-layers .leaflet-control{
+    background-color: red;
+}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip{
+    background: var(--color1);
+    color: var(--color5);
+}
+.leaflet-container a.leaflet-popup-close-button{
+    color: var(--color5);
+}
+.marker-cluster span{
+    color: white;
+}
+.btnRecentrer, .btnPleinEcran{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 2vh 0 0;
+    padding: 5px;
+    left: auto;
+    right: 0;
+    top: 150px;
+    width: 34px;
+    height: 34px;
+    background-color: var(--color1);
+    border-radius: 10px;
+    box-shadow: 6px 6px 2px 1px var(--color4);
+}
+.btnFleche, .btnParametres, .btnExit{
+    transition: .3s;
+}
+.btnParametres{
+    transform: rotate(0deg);
+}
+.btnPleinEcran{
+    top: 0;
+}
+.btnSVG{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    stroke: none;
+    fill: var(--color3);
+    cursor: pointer;
+}
+.btnSVGFleche{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.btnFleche{
+    width: 100%;
+    height: 25px;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    border-top: 2px solid var(--color2);
+}
+.flecheActivated{
+    transform: rotate(180deg);
+}
+.menu{
+    width: 15rem;
+    margin: 2vh 0 0 2vh;
+    padding: 5px 1rem 0 1rem;
+    height: auto;
+    max-height: 40rem;
+    overflow: hidden;
+    background-color: var(--color1);
+    border-radius: 10px;
+    z-index: 2;
+    box-shadow: -6px 6px 2px 1px var(--color4);  
+    transition: max-height .3s;
+}
+.menuActivated{
+    max-height: 6rem;
+    transition: max-height .3s;
+}
+.menuContentInstallations{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.menuContentInstallationsHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.installations{
+    width: 100%;
+    height: auto;
+    max-height: 32em;
+    overflow: auto;
+}
+.installationsTitre{
+    margin: 10px;
+    text-align: center;
+    font-size: 2vh;
+    color: var(--color5);
+}
+.installationsRetourContrats{
+    transform: rotate(-90deg);
+}
+.installationsContentGauche{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.installationsContentDroite{
+    text-align: right;
+}
+table{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+thead{
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+td{
+    padding: 0;
+    margin: 0;
+}
+hr{
+    border: .5px solid var(--color3);
+    width: 90%;
+}
+.displayNone{
+    display: none;
+}
+.menuNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 2.2rem;
+    margin-bottom: 5px;
+}
+.menuNavExit{
+    font-size: 0.8rem;
+    padding: 5px;
+    cursor: pointer;
+}
+.menuLogoMps{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+}
+.menuSeparation{
+    height: 20px;
+    width: 2px;
+    background-color: var(--color2);
+    margin: 7px 15px;
+}
+.menuContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.installation__etat{
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 100%;
+    display: inline-block;
+}
+.installations__desc{
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    stroke: none;
+    fill: var(--color3);
+    transform: rotate(90deg);
+}
+.description{
+    background-color: var(--color1);
+    position: absolute;
+    left: 18rem;
+    width: 50vw;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40rem;
+    margin: 2vh 0 0 2vh;
+    padding: 1rem;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 2;
+    box-shadow: -6px 6px 2px 1px var(--color4);
+    transition: .3s;
+}
+#descriptionContent{
+    padding: 10px 0;
+    width: auto;
+}
+.descriptionHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 2rem;
+}
+.descriptionBody{
+    width: 100%;
+    height: 26.6rem;
+    overflow-y: auto;
+}
+.descriptionTitre{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.descriptionTest{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.descriptionBtnExportPDF{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.btnExportPDF{
+    background-color: var(--color3);
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    border: none;
+    margin: 1rem;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.btnSVGexportPDF{
+    fill: white;
+    padding: 0 5px 0 0;
+}
+.spanExportPDF{
+    color: white;
+    font-size: 1rem;
+}
+.leaflet-control-zoom-in, .leaflet-control-zoom-out{
+    background-color: red;
+}
+.chartjs-render-monitor{
+    width: 100%;
+}
+.content{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    width: auto;
+    height: auto;
+    top: 0;
+}
+canvas{
+    width: 100%;
+    height: 400px;
+}
+.accordion{
+    background-color: var(--color3);
+    color: #2E2E2E;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    margin: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+.active{
+    background-color: var(--color3);
+    color: white;
+}
+.accordion:after{
+    content: '\002B';
+    color: #2E2E2E;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after{
+    content: "\2212";
+    color: white;
+}
+.panel{
+    background-color: none;
+    max-height: 0;
+    overflow: auto;
+    transition: max-height 0.3s ease-out;
+}
+.descriptionInterventions{
+    width: 100%;
+}
+.descriptionInterventionsTable{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.descriptionInterventionsTable:hover{
+    background: none;
+    cursor: default;
+}
+.descriptionInterventionsTitre{
+    font-weight: bolder;
+}
+.descriptionInterventionsTr{
+    border-top: 1px solid var(--color4);
+}
+.descriptionInterventionsTable tr{
+    height: 2rem;
+}
+.descriptionInterventionsTable tr td{
+    padding: 5px;
+}
+.parametres{
+    width: 100%;
+    text-align: center;
+}
+.parametresFormLang{
+    width: auto;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+}
+.parametresFormLangSelect, .parametresFormLangSubmit{
+    font-size: 1rem;
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px var(--color4) solid;
+    cursor: pointer;
+    color: var(--color3);
+    background: var(--color1);
+    outline: none;
+}
+.parametresFormLangSubmit{
+    width: auto;
+    margin: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color3);
+    color: white;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-bottom: 1rem;
+}
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color4);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--color1);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: var(--color3);
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+.login__form__lang{
+    width: 100%;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+}
+.login__form__lang__select, .login__form__lang__submit{
+    font-size: 1rem;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-bottom: 1px var(--color2) solid;
+    cursor: pointer;
+    color: var(--color3);
+    background-color: var(--color1);
+    outline: none;
+}
+.login__form__lang__submit{
+    width: auto;
+    margin: 1rem auto;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color3);
+    color: white;
+}
+
+.installationsFiltre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.leaflet-bar a:hover{
+    border-color: var(--color2);
+}
+.popupImg{
+    width: 200px;
+    height: auto;
+}
+
+@media screen and (max-width: 992px) {
+
+
+}
