@@ -60,16 +60,6 @@
         "lien": "https://www.lesmachines-nantes.fr/"
     },
     {
-        "pays": "France",
-        "ville": "Pau",
-        "annee": "2015",
-        "latitude": "43.3",
-        "longitude": "-0.3667",
-        "img": "data/chateaudepau.jpg",
-        "imgDesc": "Château de Pau",
-        "lien": "https://chateau-pau.fr/"
-    },
-    {
         "pays": "Espagne",
         "ville": "Barcelone",
         "annee": "2014",
