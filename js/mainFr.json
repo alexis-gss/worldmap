@@ -1,11 +1,21 @@
 [
     {
         "pays": "France",
+        "ville": "Le Mans",
+        "annee": "2022",
+        "latitude": "47.954643",
+        "longitude": "0.212642",
+        "img": "data/24hmans.jpg",
+        "imgDesc": "24h du Mans",
+        "lien": "https://www.24h-lemans.com/"
+    },
+    {
+        "pays": "France",
         "ville": "Étretat",
         "annee": "2020",
         "latitude": "49.7074621",
         "longitude": "0.2031905",
-        "img": "data/etretat.png",
+        "img": "data/etretat.jpg",
         "imgDesc": "Falaises d'Étretat",
         "lien": "https://www.normandie-tourisme.fr/les-incontournables/etretat/"
     },
