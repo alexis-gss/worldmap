@@ -1,132 +1,112 @@
 [
-    {
-        "pays": "France",
-        "ville": "Le Mans",
-        "annee": "2022",
-        "latitude": "47.954643",
-        "longitude": "0.212642",
-        "img": "data/24hmans.jpg",
-        "imgDesc": "24h of Le Mans",
-        "lien": "https://www.24h-lemans.com/"
-    },
-    {
-        "pays": "France",
-        "ville": "Étretat",
-        "annee": "2020",
-        "latitude": "49.7074621",
-        "longitude": "0.2031905",
-        "img": "data/etretat.jpg",
-        "imgDesc": "Étretat Cliffs",
-        "lien": "https://www.normandie-tourisme.fr/les-incontournables/etretat/"
-    },
-    {
-        "pays": "France",
-        "ville": "Deauville",
-        "annee": "2020",
-        "latitude": "49.3607683",
-        "longitude": "0.0665354",
-        "img": "data/cinemaamericain.jpg",
-        "imgDesc": "Artists' huts",
-        "lien": "https://fr.wikipedia.org/wiki/Les_Planches_(Deauville)#Au_cin%C3%A9ma"
-    },
-    {
-        "pays": "France",
-        "ville": "Arromanches",
-        "annee": "2020",
-        "latitude": "49.34059524536133",
-        "longitude": "-0.6217721104621887",
-        "img": "data/plagedebarquement.jpg",
-        "imgDesc": "Landing beaches",
-        "lien": "https://www.normandie-tourisme.fr/les-incontournables/arromanches/"
-    },
-    {
-        "pays": "France",
-        "ville": "Colleville-sur-Mer",
-        "annee": "2020",
-        "latitude": "49.36289904303902",
-        "longitude": "-0.8616100494384904",
-        "img": "data/cimetiereamericain.jpg",
-        "imgDesc": "American cemetery",
-        "lien": "https://www.calvados-tourisme.com/offre/normandy-american-cemetery/"
-    },
-    {
-        "pays": "France",
-        "ville": "Cricqueville-en-Bessin",
-        "annee": "2020",
-        "latitude": "49.39579391479492",
-        "longitude": "-0.9891084432601929",
-        "img": "data/pointeduhoc.jpg",
-        "imgDesc": "'Pointe du Hoc'",
-        "lien": "https://www.calvados-tourisme.com/offre/site-de-la-pointe-du-hoc/"
-    },
-    {
-        "pays": "France",
-        "ville": "Nantes",
-        "annee": "2017",
-        "latitude": "47.2178367",
-        "longitude": "-1.5549668",
-        "img": "data/lesmachinesdelile.jpg",
-        "imgDesc": "The Machines of Nantes Island",
-        "lien": "https://www.lesmachines-nantes.fr/"
-    },
-    {
-        "pays": "Spain",
-        "ville": "Barcelone",
-        "annee": "2014",
-        "latitude": "41.38039",
-        "longitude": "2.1206365",
-        "img": "data/campnou.jpg",
-        "imgDesc": "'Camp Nou'",
-        "lien": "https://www.fcbarcelona.fr/"
-    },
-    {
-        "pays": "Spain",
-        "ville": "Barcelone",
-        "annee": "2014",
-        "latitude": "41.382568359375",
-        "longitude": "2.177138328552246",
-        "img": "data/sagradafamilia.jpg",
-        "imgDesc": "'Sagrada Familia'",
-        "lien": "https://sagradafamilia.org/"
-    },
-    {
-        "pays": "Spain",
-        "ville": "Barcelone",
-        "annee": "2014",
-        "latitude": "41.4067434",
-        "longitude": "2.1590251",
-        "img": "data/parcguell.jpg",
-        "imgDesc": "'El Parque Güell'",
-        "lien": "https://parkguell.barcelona/"
-    },
-    {
-        "pays": "Spain",
-        "ville": "Barcelone",
-        "annee": "2014",
-        "latitude": "41.3915446",
-        "longitude": "2.1646961",
-        "img": "data/lacasabatllo.jpg",
-        "imgDesc": "'La Casa Batlló'",
-        "lien": "https://www.casabatllo.es/"
-    },
-    {
-        "pays": "France",
-        "ville": "Périgueux",
-        "annee": "2012",
-        "latitude": "44.8500686",
-        "longitude": "0.4847551",
-        "img": "data/vesunna.jpg",
-        "imgDesc": "Gallo-Roman Museum: 'Vesunna'",
-        "lien": "https://www.perigueux-vesunna.fr/"
-    },
-    {
-        "pays": "France",
-        "ville": "Paris",
-        "annee": "2008",
-        "latitude": "48.8247834",
-        "longitude": "2.3592573",
-        "img": "data/disneylandparis.jpg",
-        "imgDesc": "'Disneyland Paris'",
-        "lien": "https://www.disneylandparis.com/fr-fr/"
-    }
+  {
+    "pays": "France",
+    "ville": "Le Mans",
+    "annee": "2022",
+    "latitude": "47.954643",
+    "longitude": "0.212642",
+    "img": "data/24hmans.jpg",
+    "imgDesc": "24h of Le Mans circuit",
+    "lien": "https://www.24h-lemans.com/"
+  },
+  {
+    "pays": "France",
+    "ville": "Étretat",
+    "annee": "2020",
+    "latitude": "49.7074621",
+    "longitude": "0.2031905",
+    "img": "data/etretat.jpg",
+    "imgDesc": "Étretat Cliffs",
+    "lien": "https://www.normandie-tourisme.fr/les-incontournables/etretat/"
+  },
+  {
+    "pays": "France",
+    "ville": "Deauville",
+    "annee": "2020",
+    "latitude": "49.3607683",
+    "longitude": "0.0665354",
+    "img": "data/cinemaamericain.jpg",
+    "imgDesc": "Artists' huts",
+    "lien": "https://fr.wikipedia.org/wiki/Les_Planches_(Deauville)#Au_cin%C3%A9ma"
+  },
+  {
+    "pays": "France",
+    "ville": "Arromanches",
+    "annee": "2020",
+    "latitude": "49.34059524536133",
+    "longitude": "-0.6217721104621887",
+    "img": "data/plagedebarquement.jpg",
+    "imgDesc": "Landing beaches",
+    "lien": "https://www.normandie-tourisme.fr/les-incontournables/arromanches/"
+  },
+  {
+    "pays": "France",
+    "ville": "Colleville-sur-Mer",
+    "annee": "2020",
+    "latitude": "49.36289904303902",
+    "longitude": "-0.8616100494384904",
+    "img": "data/cimetiereamericain.jpg",
+    "imgDesc": "American cemetery",
+    "lien": "https://www.calvados-tourisme.com/offre/normandy-american-cemetery/"
+  },
+  {
+    "pays": "France",
+    "ville": "Cricqueville-en-Bessin",
+    "annee": "2020",
+    "latitude": "49.39579391479492",
+    "longitude": "-0.9891084432601929",
+    "img": "data/pointeduhoc.jpg",
+    "imgDesc": "'Pointe du Hoc'",
+    "lien": "https://www.calvados-tourisme.com/offre/site-de-la-pointe-du-hoc/"
+  },
+  {
+    "pays": "Spain",
+    "ville": "Barcelone",
+    "annee": "2014",
+    "latitude": "41.38039",
+    "longitude": "2.1206365",
+    "img": "data/campnou.jpg",
+    "imgDesc": "'Camp Nou'",
+    "lien": "https://www.fcbarcelona.fr/"
+  },
+  {
+    "pays": "Spain",
+    "ville": "Barcelone",
+    "annee": "2014",
+    "latitude": "41.382568359375",
+    "longitude": "2.177138328552246",
+    "img": "data/sagradafamilia.jpg",
+    "imgDesc": "'Sagrada Familia'",
+    "lien": "https://sagradafamilia.org/"
+  },
+  {
+    "pays": "Spain",
+    "ville": "Barcelone",
+    "annee": "2014",
+    "latitude": "41.4067434",
+    "longitude": "2.1590251",
+    "img": "data/parcguell.jpg",
+    "imgDesc": "'El Parque Güell'",
+    "lien": "https://parkguell.barcelona/"
+  },
+  {
+    "pays": "Spain",
+    "ville": "Barcelone",
+    "annee": "2014",
+    "latitude": "41.3915446",
+    "longitude": "2.1646961",
+    "img": "data/lacasabatllo.jpg",
+    "imgDesc": "'La Casa Batlló'",
+    "lien": "https://www.casabatllo.es/"
+  },
+  {
+    "pays": "France",
+    "ville": "Paris",
+    "annee": "2008",
+    "latitude": "48.8247834",
+    "longitude": "2.3592573",
+    "img": "data/disneylandparis.jpg",
+    "imgDesc": "'Disneyland Paris'",
+    "lien": "https://www.disneylandparis.com/fr-fr/"
+  }
 ]
