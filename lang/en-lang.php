@@ -20,6 +20,6 @@
     define("MAP_CLAIR", "Clear");
     define("MAP_SOMBRE", "Dark");
     define("MAP_DESTINATIONS", "Destinations : ");
-    define("MAP_PARAMETRES_TITRE", "Settings : ");
+    define("MAP_PARAMETRES_TITRE", "Language : ");
     define("MAP_PARAMETRES_DARKMODE", "Dark mode : ");
 ?>
