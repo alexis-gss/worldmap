@@ -315,3 +315,13 @@ input:checked + .slider:before {
     opacity: 0;
     z-index: 100;
 }
+footer {
+    width: 100%;
+}
+footer p,
+footer a {
+  color: #ffffff80;
+}
+footer a:hover {
+  color: #FFFFFF;
+}

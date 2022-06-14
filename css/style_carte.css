@@ -647,7 +647,19 @@ input:checked + .slider:before {
     height: auto;
 }
 
-@media screen and (max-width: 992px) {
-
-
+footer {
+    right: 0;
+    left: auto;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.7);
+    bottom: 15px;
+    border-top-left-radius: 10px;
+}
+footer p,
+footer a {
+    color: #333;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 2px;
 }

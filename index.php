@@ -7,6 +7,7 @@
 <head>
     <title>WorldMap - <?php echo LOGIN_ACCUEIL; ?></title>
     <link rel="stylesheet" href="css/style_login.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700,800' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="icon" href="data/worldmaplogo.png">
@@ -127,6 +128,8 @@
             </symbol>
         </defs>
     </svg>
+
+    <?php include 'footer.php'; ?>
 
     <script src="js/main_login.js" async></script>
 </body>
