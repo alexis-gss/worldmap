@@ -62,7 +62,7 @@ span{
     animation: loaderAnimation 10s linear infinite;
 }
 @keyframes loaderAnimation {
-    0{
+    0% {
         transform: rotate(0);
     }
     100%{
@@ -129,6 +129,7 @@ span{
     padding: 10px 15px;
     margin: 2rem;
     color: white;
+    font-weight: bold;
     background: var(--color3);
     border-radius: 10px;
     font-size: larger;
@@ -208,7 +209,7 @@ span{
     margin: 0;
     padding: 0;
     transition: .3s;
-    z-index: 300;
+    z-index: 500;
 }
 .parametresDarkModeTitre{
     color: var(--color5);
@@ -278,7 +279,7 @@ input:checked + .slider:before {
     border-bottom: 1px var(--color4) solid;
     cursor: pointer;
     color: var(--color3);
-    background: var(--color1);
+    background: transparent;
     outline: none;
 }
 .parametresFormLangSubmit{
