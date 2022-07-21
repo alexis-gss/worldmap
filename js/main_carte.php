@@ -104,11 +104,11 @@
         <?php 
         if($_POST['lang'] == 'fr'){
         ?>
-            url = "js/mainFr.json"
+            url = "json/mainFr.json"
         <?php
         }else if($_POST['lang'] == 'en'){
         ?>
-            url = "js/mainEn.json"
+            url = "json/mainEn.json"
         <?php
         }
         ?>
@@ -137,7 +137,7 @@
                 if(tab[i].pays === "France"){
                     var marker = L.marker([tab[i].latitude, tab[i].longitude], {
                         icon: L.icon({
-                            iconUrl: "data/marqueur_bleu.png",
+                            iconUrl: "data/pictos/marqueur_bleu.png",
                             shadowUrl: '',
                             iconSize:     [26, 40], // size of the icon
                             shadowSize:   [0, 0],   // size of the shadow
@@ -150,7 +150,7 @@
                 if(tab[i].pays === "Espagne" || tab[i].pays === "Spain"){
                     var marker = L.marker([tab[i].latitude, tab[i].longitude], {
                         icon: L.icon({
-                            iconUrl: "data/marqueur_orange.png",
+                            iconUrl: "data/pictos/marqueur_orange.png",
                             shadowUrl: '',
                             iconSize:     [26, 40], // size of the icon
                             shadowSize:   [0, 0],   // size of the shadow

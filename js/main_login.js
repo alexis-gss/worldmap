@@ -32,7 +32,7 @@ btnDarkMode.addEventListener("click", function(){
     }
 })
 
-window.addEventListener("load", function(event) {
+window.addEventListener("load", function() {
     var loader = document.querySelector(".loader")
     loader.style.opacity = "0"
     setTimeout(function(){

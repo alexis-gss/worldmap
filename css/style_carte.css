@@ -1,11 +1,4 @@
 /*PARAMETRES*/
-:root{
-    --color1: #FFFFFF;
-    --color2: #E5E5E5;
-    --color3: #0089C8;
-    --color4: rgba(86, 86, 86, .4);
-    --color5: #3E3E3E;
-}
 ::-webkit-scrollbar{
 	background: var(--color2);
 	width: 10px;
@@ -149,7 +142,7 @@ span{
     color: var(--color3);
 }
 .leaflet-control-layers-toggle{
-    background-image: url("../data/layers.png");
+    background-image: url("../data/pictos/layers.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 24px;

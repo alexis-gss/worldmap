@@ -5,9 +5,9 @@
     "annee": "2022",
     "latitude": "48.975008",
     "longitude": "2.527979",
-    "img": "data/japanexpo.jpg",
+    "img": "data/images/japanexpo.jpg",
     "imgDesc": "Japan Expo",
-    "lien": "https://www.japan-expo-paris.com/fr/"
+    "lien": "https://www.japan-expo-paris.com/en/"
   },
   {
     "pays": "France",
@@ -15,8 +15,8 @@
     "annee": "2022",
     "latitude": "47.954643",
     "longitude": "0.212642",
-    "img": "data/24hmans.jpg",
-    "imgDesc": "Circuit des 24h du Mans",
+    "img": "data/images/24hmans.jpg",
+    "imgDesc": "24h of Le Mans circuit",
     "lien": "https://www.24h-lemans.com/"
   },
   {
@@ -25,8 +25,8 @@
     "annee": "2020",
     "latitude": "49.7074621",
     "longitude": "0.2031905",
-    "img": "data/etretat.jpg",
-    "imgDesc": "Falaises d'Étretat",
+    "img": "data/images/etretat.jpg",
+    "imgDesc": "Étretat Cliffs",
     "lien": "https://www.normandie-tourisme.fr/les-incontournables/etretat/"
   },
   {
@@ -35,8 +35,8 @@
     "annee": "2020",
     "latitude": "49.3607683",
     "longitude": "0.0665354",
-    "img": "data/cinemaamericain.jpg",
-    "imgDesc": "Cabanes des artistes",
+    "img": "data/images/cinemaamericain.jpg",
+    "imgDesc": "Artists' huts",
     "lien": "https://fr.wikipedia.org/wiki/Les_Planches_(Deauville)#Au_cin%C3%A9ma"
   },
   {
@@ -45,8 +45,8 @@
     "annee": "2020",
     "latitude": "49.34059524536133",
     "longitude": "-0.6217721104621887",
-    "img": "data/plagedebarquement.jpg",
-    "imgDesc": "Plages du débarquement",
+    "img": "data/images/plagedebarquement.jpg",
+    "imgDesc": "Landing beaches",
     "lien": "https://www.normandie-tourisme.fr/les-incontournables/arromanches/"
   },
   {
@@ -55,8 +55,8 @@
     "annee": "2020",
     "latitude": "49.36289904303902",
     "longitude": "-0.8616100494384904",
-    "img": "data/cimetiereamericain.jpg",
-    "imgDesc": "Cimetière américain",
+    "img": "data/images/cimetiereamericain.jpg",
+    "imgDesc": "American cemetery",
     "lien": "https://www.calvados-tourisme.com/offre/normandy-american-cemetery/"
   },
   {
@@ -65,47 +65,47 @@
     "annee": "2020",
     "latitude": "49.39579391479492",
     "longitude": "-0.9891084432601929",
-    "img": "data/pointeduhoc.jpg",
+    "img": "data/images/pointeduhoc.jpg",
     "imgDesc": "'Pointe du Hoc'",
     "lien": "https://www.calvados-tourisme.com/offre/site-de-la-pointe-du-hoc/"
   },
   {
-    "pays": "Espagne",
+    "pays": "Spain",
     "ville": "Barcelone",
     "annee": "2014",
     "latitude": "41.38039",
     "longitude": "2.1206365",
-    "img": "data/campnou.jpg",
+    "img": "data/images/campnou.jpg",
     "imgDesc": "'Camp Nou'",
     "lien": "https://www.fcbarcelona.fr/"
   },
   {
-    "pays": "Espagne",
+    "pays": "Spain",
     "ville": "Barcelone",
     "annee": "2014",
     "latitude": "41.382568359375",
     "longitude": "2.177138328552246",
-    "img": "data/sagradafamilia.jpg",
+    "img": "data/images/sagradafamilia.jpg",
     "imgDesc": "'Sagrada Familia'",
     "lien": "https://sagradafamilia.org/"
   },
   {
-    "pays": "Espagne",
+    "pays": "Spain",
     "ville": "Barcelone",
     "annee": "2014",
     "latitude": "41.4067434",
     "longitude": "2.1590251",
-    "img": "data/parcguell.jpg",
+    "img": "data/images/parcguell.jpg",
     "imgDesc": "'El Parque Güell'",
     "lien": "https://parkguell.barcelona/"
   },
   {
-    "pays": "Espagne",
+    "pays": "Spain",
     "ville": "Barcelone",
     "annee": "2014",
     "latitude": "41.3915446",
     "longitude": "2.1646961",
-    "img": "data/lacasabatllo.jpg",
+    "img": "data/images/lacasabatllo.jpg",
     "imgDesc": "'La Casa Batlló'",
     "lien": "https://www.casabatllo.es/"
   },
@@ -115,7 +115,7 @@
     "annee": "2008",
     "latitude": "48.8247834",
     "longitude": "2.3592573",
-    "img": "data/disneylandparis.jpg",
+    "img": "data/images/disneylandparis.jpg",
     "imgDesc": "'Disneyland Paris'",
     "lien": "https://www.disneylandparis.com/fr-fr/"
   }

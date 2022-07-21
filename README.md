@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Banner of the github account](./data/worldmap.jpg)
+![Banner of the github account](./data/others/worldmap.jpg)
 
 ![Website fakesite.invalid](https://img.shields.io/website-up-down-green-red/http/www.worldmap.alexis-gousseau.com)
 ![GitHub latest commit](https://badgen.net/github/last-commit/alexis-gss/worldmap?color=0089c8)

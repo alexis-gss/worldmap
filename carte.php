@@ -10,30 +10,28 @@
     <html lang="fr">
     <head>
         <link href='https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700,800' rel='stylesheet' type='text/css'>
-        <link rel="icon" href="data/worldmaplogo.png">
+        <link rel="icon" href="data/others/worldmaplogo.png">
         <title>WorldMap - Carte</title>
         
         <!-- lien vers des fichiers pour utiliser la librairie leaflet -->
         <link rel="stylesheet" href="css/leaflet.css"/>
-        <script src="lib/Leaflet.js"></script>
+        <script src="js/leaflet.js"></script>
 
         <!-- lien vers les fichiers .js pour rassembler des marqueurs -->
-        <link rel="stylesheet" href="lib/MarkerCluster.css" />
-        <script src="lib/Markercluster.js"></script>
-        
-        <!-- lien vers le fichier .js pour faire des graphiques -->
-        <script type="text/javascript" src="lib/Chart.min.js"></script>
+        <link rel="stylesheet" href="css/markercluster.css" />
+        <script src="js/markercluster.js"></script>
 
         <!-- lien vers la police -->
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
         <!-- lien vers le fichier .css -->
+        <link rel="stylesheet" href="css/colors.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/style_carte.css">
     </head>
     <body>
     <section class="loader">
-	    <img src="data/worldmaplogo.png" alt="<?php echo LOADER_ALT; ?>"/>
+	    <img src="data/others/worldmaplogo.png" alt="<?php echo LOADER_ALT; ?>"/>
         <h2><?php echo LOADER_CHARGEMENT; ?></h2>
         <div></div>
     </section>
@@ -47,7 +45,7 @@
         <section class="content">
             <section class="menu">
                 <div class="menuNav">
-                    <img class="menuLogoMps" src="data/worldmaplogo.png">
+                    <img class="menuLogoMps" src="data/others/worldmaplogo.png">
                     <span class="menuSeparation"></span>
                     <btn class="btnExit" title="<?php echo MAP_TITLE_DECONNECTION; ?>">
                         <svg class="btnSVG">

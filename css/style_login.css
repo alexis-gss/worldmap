@@ -1,11 +1,3 @@
-/* COULEURS */
-:root{
-    --color1: #FFFFFF;
-    --color2: #E5E5E5;
-    --color3: #0089C8;
-    --color4: rgba(86, 86, 86, .4);
-    --color5: #3E3E3E;
-}
 /* CARECTÉRISTIQUES DE LA PAGE ET DE CERTAINES BALISES */
 html, body{
     margin: 0;
@@ -151,7 +143,7 @@ span{
 .fond{
     height: 100%;
     width: 100%;
-    background: url('../data/terre.jpg');
+    background: url('../data/others/terre.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

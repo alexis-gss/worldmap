@@ -6,16 +6,17 @@
 <html lang="fr">
 <head>
     <title>WorldMap - <?php echo LOGIN_ACCUEIL; ?></title>
+    <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/style_login.css">
     <link rel="stylesheet" href="css/footer.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700,800' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="icon" href="data/worldmaplogo.png">
-    <script src="lib/anime.min.js"></script>
+    <link rel="icon" href="data/others/worldmaplogo.png">
+    <script src="js/anime.min.js"></script>
 </head>
 <body>
     <section class="loader">
-	    <img src="data/worldmaplogo.png" alt="<?php echo LOADER_ALT; ?>"/>
+	    <img src="data/others/worldmaplogo.png" alt="<?php echo LOADER_ALT; ?>"/>
         <h2><?php echo LOADER_CHARGEMENT; ?></h2>
         <div></div>
     </section>
