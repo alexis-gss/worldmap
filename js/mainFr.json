@@ -1,6 +1,16 @@
 [
   {
     "pays": "France",
+    "ville": "Paris",
+    "annee": "2022",
+    "latitude": "48.975008",
+    "longitude": "2.527979",
+    "img": "data/japanexpo.jpg",
+    "imgDesc": "Japan Expo",
+    "lien": "https://www.japan-expo-paris.com/fr/"
+  },
+  {
+    "pays": "France",
     "ville": "Le Mans",
     "annee": "2022",
     "latitude": "47.954643",
