@@ -1,6 +1,26 @@
 [
   {
     "pays": "France",
+    "ville": "La Flèche",
+    "annee": "2022",
+    "latitude": "47.677613",
+    "longitude": "-0.047574",
+    "img": "data/images/zoodelafleche.jpg",
+    "imgDesc": "Zoo de la Flèche",
+    "lien": "https://www.zoo-la-fleche.com/"
+  },
+  {
+    "pays": "France",
+    "ville": "Chasseneuil-du-Poitou",
+    "annee": "2022",
+    "latitude": "46.666548",
+    "longitude": "0.367555",
+    "img": "data/images/futuroscope.jpg",
+    "imgDesc": "Futuroscope",
+    "lien": "https://www.futuroscope.com/fr/"
+  },
+  {
+    "pays": "France",
     "ville": "Paris",
     "annee": "2022",
     "latitude": "48.975008",
@@ -116,7 +136,7 @@
     "latitude": "48.8247834",
     "longitude": "2.3592573",
     "img": "data/images/disneylandparis.jpg",
-    "imgDesc": "'Disneyland Paris'",
+    "imgDesc": "Disneyland Paris",
     "lien": "https://www.disneylandparis.com/fr-fr/"
   }
 ]
