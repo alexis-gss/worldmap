@@ -141,24 +141,20 @@ h3{
 span{
     color: var(--color3);
 }
-.leaflet-control-layers-toggle{
+.leaflet-touch .leaflet-control-layers-toggle{
     background-image: url("../data/pictos/layers.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 24px;
     padding: 5px;
+    width: 34px;
+    height: 34px;
+	transition: .3s;
+    border-radius: 10px;
     float: right;
 }
 .leaflet-control-layers-expanded{
     width: 5rem;
-}
-.leaflet-touch .leaflet-control-layers-toggle{
-    width: 34px;
-    height: 34px;
-}
-.leaflet-control-layers-toggle{
-    width: 34px;
-    height: 34px;
 }
 .leaflet-bottom{
     height: 235px;
@@ -190,9 +186,13 @@ span{
 .leaflet-popup-content-wrapper, .leaflet-popup-tip{
     background: var(--color1);
     color: var(--color5);
+    transition: .3s;
 }
 .leaflet-container a.leaflet-popup-close-button{
     color: var(--color5);
+}
+.leaflet-container a.leaflet-popup-close-button:hover{
+    transform: rotate(90deg);
 }
 .marker-cluster span{
     color: white;
@@ -213,6 +213,7 @@ span{
     background-color: var(--color1);
     border-radius: 10px;
     box-shadow: 6px 6px 2px 1px var(--color4);
+    transition: .3s;
 }
 .btnFleche, .btnParametres, .btnExit{
     transition: .3s;
@@ -230,6 +231,7 @@ span{
     stroke: none;
     fill: var(--color3);
     cursor: pointer;
+    transition: .3s;
 }
 .btnSVGFleche{
     width: 100%;
@@ -242,7 +244,7 @@ span{
     height: 25px;
     left: 0;
     bottom: 0;
-    padding: 10px;
+    padding: 10px 0;
     border-top: 2px solid var(--color2);
 }
 .flecheActivated{
@@ -257,16 +259,16 @@ span{
     overflow: hidden;
     background-color: var(--color1);
     border-radius: 10px;
+    box-shadow: -6px 6px 2px 1px var(--color4);
+    transition: .3s;
     z-index: 2;
-    box-shadow: -6px 6px 2px 1px var(--color4);  
-    transition: max-height .3s;
 }
 .menuActivated{
+    width: 11rem;
     max-height: 6rem;
-    transition: max-height .3s;
+    transition: .3s;
 }
 .menuContentInstallations{
-    margin-bottom: 10px;
     width: 100%;
 }
 .menuContentInstallationsHeader{
@@ -533,23 +535,15 @@ canvas{
     flex-direction: column;
     outline: none;
 }
-.parametresFormLangSelect, .parametresFormLangSubmit{
+.parametresFormLangSelect{
     font-size: 1rem;
     padding: 1rem;
     border: none;
     border-bottom: 1px var(--color4) solid;
     cursor: pointer;
     color: var(--color3);
-    background: var(--color1);
+    background: transparent;
     outline: none;
-}
-.parametresFormLangSubmit{
-    width: auto;
-    margin: 1rem;
-    border: none;
-    border-radius: 10px;
-    background-color: var(--color3);
-    color: white;
 }
 .switch {
     position: relative;
@@ -605,32 +599,8 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: column;
     outline: none;
-}
-.login__form__lang__select, .login__form__lang__submit{
-    font-size: 1rem;
-    padding: 1rem;
-    width: 100%;
-    border: none;
-    border-bottom: 1px var(--color2) solid;
-    cursor: pointer;
-    color: var(--color3);
-    background-color: var(--color1);
-    outline: none;
-}
-.login__form__lang__submit{
-    width: auto;
-    margin: 1rem auto;
-    border: none;
-    border-radius: 10px;
-    background-color: var(--color3);
-    color: white;
-}
-
-.installationsFiltre{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    transition: .3s;
+    background-color: transparent;
 }
 .leaflet-bar a:hover{
     border-color: var(--color2);

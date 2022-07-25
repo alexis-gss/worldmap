@@ -264,7 +264,7 @@ input:checked + .slider:before {
     flex-direction: column;
     outline: none;
 }
-.parametresFormLangSelect, .parametresFormLangSubmit{
+.parametresFormLangSelect{
     font-size: 1rem;
     padding: 1rem;
     border: none;
@@ -273,14 +273,6 @@ input:checked + .slider:before {
     color: var(--color3);
     background: transparent;
     outline: none;
-}
-.parametresFormLangSubmit{
-    width: auto;
-    margin: 1rem;
-    border: none;
-    border-radius: 10px;
-    background-color: var(--color3);
-    color: white;
 }
 .parametresDarkMode{
     width: auto;
